@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+      /* *************************** */
+      /* ------ GLOBAL STYLES ------ */
+      /* *************************** */
+      body {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        font-weight: 300;
+        font-family: sans-serif;
+      }
+      table {
+        border-spacing: 0;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      ul {
+        list-style: none;
+      }
+      p {
+        line-height: 24px;
+        color: #727f80;
+      }
+      .h1 {
+        font-size: 140%;
+        font-weight: 600;
+        line-height: 45px;
+        text-align: center;
+        color: #000;
+      }
+      /* *************************** */
+      /* ------ HEADER ------ */
+      /* *************************** */
+      .wrapper-outer {
+        background-color: #fff;
+        width: 100%;
+        table-layout: fixed;
+      }
+      .wrapper-inner {
+        margin: 15px auto;
+        max-width: 675px;
+        background-color: #EEEEEE;
+      }
+      .running {
+        width: 100%;
+        background-color: #C2C1C1;
+      }
+      .running td {
+        text-align: center;
+        padding: 5px 0;
+      }
+      .running a {
+        text-transform: uppercase;
+      }
+      .header {
+        border-bottom: 3px solid #81B9C3;
+      }
+      .main-container {
+        width: 100%;
+        max-width: 625px;
+        background-color: #fff;
+        margin: 30px auto 0;
+        border-radius: 7px;
+        padding: 15px;
+      }
+      .section {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      /* *************************** */
+      /* ------ SECTION 1 ------ */
+      /* *************************** */
+      .sub-section {
+        display: inline-block;
+        width: 100%;
+        max-width: 290px;
+        vertical-align: top;
+      }
+      .content {
+        width: 100%;
+      }
+      .logo {
+        width: 100%;
+        float: left;
+      }
+      .callout {
+        float: right;
+      }
+      .callout li {
+        display: inline-block;
+      }
+      .callout img {
+        width: 25px;
+      }
+      /* *************************** */
+      /* ------ SECTION 2 ------ */
+      /* *************************** */
+      .section-outer {
+        margin-left: -40px;
+        margin-right: -40px;
+      }
+      .section-outer img {
+        width: 100%;
+      }
+      /* *************************** */
+      /* ------ SECTION 3 ------ */
+      /* *************************** */
+      .section-weekly-letter {
+      }
+
+      .btn {
+        margin-top: 10px;
+        background-color: #81BAC6;
+        padding: 10px 20px;
+        font-size: 110%;
+        border-radius: 20px;
+        text-align: center;
+        width: 25%;
+      }
+
+      .column-two-img {
+        width: 100%;
+      }
+      /* *************************** */
+      /* ------ SECTION DEVICE ------ */
+      /* *************************** */
+      .section-device {
+        border-top: 3px solid #81B9C3;
+        border-bottom: 3px solid #81B9C3;
+        background-color: #C2C1C1;
+        padding: 30px 0;
+        width: 113.5%;
+      }
+      .device-content {
+        text-align: center;
+      }
+      .device-img {
+        max-width: 125px;
+      }
+      .device-text {
+        color: #fff;
+      }
+      .device-sub-section {
+        display: inline-block;
+        width: 100%;
+        max-width: 200px;
+        vertical-align: top;
+      }
+      /* *************************** */
+      /* ------ SECTION STORY ------ */
+      /* *************************** */
+      .section-story {
+        margin-top: 30px;
+      }
+      .section-story p {
+        margin: 0;
+      }
+      .td-inner {
+        padding-right: 10px;
+      }
+      .section-story-bottom {
+        margin-top: 20px;
+      }
+      .section-story-bottom .btn{
+        float: right;
+      }
+      /* *************************** */
+      /* ------ SECTION FOOTER ------ */
+      /* *************************** */
+      .footer {
+        padding: 15px 0;
+        border-top: 3px solid #81B9C3;
+      }
+      .footer-img {
+        text-align: center;
+      }
+      .footer-text {
+        margin-top: 0;
+        color: #fff;
+      }
+      .content-img {
+        width: 25%;
+        margin: 0 auto;
+      }
+      /* *************************** */
+      /* ------ MEDIA QUERIES ------ */
+      /* *************************** */
+      @media screen and (max-width: 600px) {
+        .device-sub-section {
+          display: block;
+          width: 100%;
+          max-width: none;
+        }
+      }
+
+      @media screen and (max-width:750px) {
+        .section-socials {
+          text-align: center;
+        }
+        .content-logo {
+          width: 50%;
+          margin: 0 auto;
+        }
+        .callout {
+          width: 100%;
+        }
+        .callout li {
+          display: inline-block;
+        }
+        .callout img {
+          width: 25px;
+        }
+        .sub-section {
+          display: block;
+          width: 100%;
+          max-width: none;
+        }
+      }
+     </style>
+ </head>
+ <body>
+   <div class="wrapper-outer">
+     <div class="wrapper-inner">
+
+       <table class="running header">
+         <tr>
+           <td class="footer-img">
+             <a href="#">Click here to view in browser.</a>
+           </td>
+         </tr>
+       </table> <!-- END HEADER -->
+
+       <table class="main-container">
+         <tr>
+           <td>
+
+             <table class="section section-socials">
+               <tr>
+                 <td>
+
+                   <div class="sub-section">
+                     <table width="100%">
+                       <tr>
+                         <td>
+                           <table class="content content-logo">
+                             <tr>
+                               <td>
+                                 <img class="logo" src="resources/img/w3newbie-logo.png" alt="logo"/>
+                               </td>
+                             </tr>
+                           </table>
+                         </td>
+                       </tr>
+                     </table>
+                   </div>
+
+                   <div class="sub-section">
+                     <table width="100%">
+                       <tr>
+                         <td>
+                           <table class="content">
+                             <tr>
+                               <td>
+                                 <div class="callout">
+                                   <ul>
+                                     <li><a href="#"><img src="resources/img/facebook.png" alt="facebook"/></a></li>
+                                     <li><a href="#"><img src="resources/img/googleplus.png" alt="googleplus"/></a></li>
+                                     <li><a href="#"><img src="resources/img/twitter.png" alt="twitter"/></a></li>
+                                     <li><a href="#"><img src="resources/img/youtube.png" alt="youtube"/></a></li>
+                                     <li><a href="#"><img src="resources/img/instagram.png" alt="instagram"/></a></li>
+                                   </ul>
+                                 </div>
+                               </td>
+                             </tr>
+                           </table>
+                         </td>
+                       </tr>
+                     </table>
+                   </div>
+
+                 </td>
+               </tr>
+             </table> <!-- END SECTION SOCIALS -->
+
+             <table class="section-outer">
+               <tr>
+                 <td>
+                   <img src="resources/img/green-background.png" alt="Responsive HTML"/>
+                 </td>
+               </tr>
+             </table> <!-- END SECTION OUTER -->
+
+             <table class="section section-weekly-letter">
+               <tr>
+                 <td>
+                   <table width="100%">
+                     <tr>
+                       <td align="center">
+                         <p class="h1">Weekly Letter</p>
+                         <p>
+                           No comfort do written conduct at prevent manners on. Celebrated contrasted discretion him sympathize her collecting occasional.
+                           Do answered bachelor occasion in of offended no concerns. Supply worthy warmth branch of no ye. Voice tried known to as my to.
+                           Though wished merits or be. Alone visit use these smart rooms ham. No waiting in on enjoyed placing it inquiry.
+                         </p>
+                         <p class="btn"><a href="#">Learn More</a></p>
+                       </td>
+                     </tr>
+
+                     <tr>
+                       <td>
+                         <div class="sub-section">
+                           <table width="100%">
+                             <tr>
+                               <td>
+                                 <table class="content">
+                                   <tr>
+                                     <td>
+                                       <img class="column-two-img" src="resources/img/search.png" alt="search"/>
+                                     </td>
+                                   </tr>
+                                   <tr>
+                                     <td>
+                                       <p>
+                                         Exquisite cordially mr happiness of neglected distrusts. Boisterous impossible unaffected he me everything.
+                                         Is fine loud deal an rent open give. Find upon and sent spot song son eyes.
+                                       </p>
+                                     </td>
+                                   </tr>
+                                 </table>
+                               </td>
+                             </tr>
+                           </table>
+                         </div>
+
+                         <div class="sub-section">
+                           <table width="100%">
+                             <tr>
+                               <td>
+                                 <table class="content">
+                                   <tr>
+                                     <td>
+                                       <img class="column-two-img" src="resources/img/chat.png" alt="chat"/>
+                                     </td>
+                                   </tr>
+                                   <tr>
+                                     <td>
+                                       <p>
+                                         Exquisite cordially mr happiness of neglected distrusts. Boisterous impossible unaffected he me everything.
+                                         Is fine loud deal an rent open give. Find upon and sent spot song son eyes.
+                                       </p>
+                                     </td>
+                                   </tr>
+                                 </table>
+                               </td>
+                             </tr>
+                           </table>
+                         </div>
+                       </td>
+                     </tr>
+                   </table>
+                 </td>
+               </tr>
+             </table> <!-- END SECTION LETTER -->
+
+             <table class="section-device section-outer">
+               <tr>
+                 <td align="center">
+
+                   <div class="device-sub-section">
+                     <table width="100%">
+                       <tr>
+                         <td>
+                           <table class="device-content">
+                             <tr>
+                               <td>
+                                 <img class="device-img" src="resources/img/mouse.png" alt="computer mouse"/>
+                               </td>
+                             </tr>
+                             <tr>
+                               <td>
+                                 <p class="device-text">
+                                   Exquisite cordially mr happiness of neglected distrusts. Boisterous impossible unaffected he me everything
+                                 </p>
+                               </td>
+                             </tr>
+                           </table>
+                         </td>
+                       </tr>
+                     </table>
+                   </div>
+
+                   <div class="device-sub-section">
+                     <table width="100%">
+                       <tr>
+                         <td>
+                           <table class="device-content">
+                             <tr>
+                               <td>
+                                 <img class="device-img" src="resources/img/mac.png" alt="mac computer screen"/>
+                               </td>
+                             </tr>
+                             <tr>
+                               <td>
+                                 <p class="device-text">
+                                   Exquisite cordially mr happiness of neglected distrusts. Boisterous impossible unaffected he me everything
+                                 </p>
+                               </td>
+                             </tr>
+                           </table>
+                         </td>
+                       </tr>
+                     </table>
+                   </div>
+
+                   <div class="device-sub-section">
+                     <table width="100%">
+                       <tr>
+                         <td>
+                           <table class="device-content">
+                             <tr>
+                               <td>
+                                 <img class="device-img" src="resources/img/phone.png" alt="phone"/>
+                               </td>
+                             </tr>
+                             <tr>
+                               <td>
+                                 <p class="device-text">
+                                   Exquisite cordially mr happiness of neglected distrusts. Boisterous impossible unaffected he me everything
+                                 </p>
+                               </td>
+                             </tr>
+                           </table>
+                         </td>
+                       </tr>
+                     </table>
+                   </div>
+
+                 </td>
+               </tr>
+             </table> <!-- END SECTION DEVICE -->
+
+             <table class="section-story">
+               <tr>
+                 <td>
+                   <table width="100%">
+                     <tr>
+                       <td>
+
+                         <div class="sub-section">
+                           <table width="100%">
+                             <tr>
+                               <td class="td-inner">
+                                 <table class="content">
+                                   <tr>
+                                     <td>
+                                       <img class="column-two-img" src="resources/img/pie-chart.png" alt="pie chart"/>
+                                     </td>
+                                   </tr>
+                                   <tr>
+                                     <td>
+                                       <p class="h1">Article Content </p>
+                                       <p>
+                                         Ladyship it daughter securing procured or am moreover mr. Put sir she exercise vicinity cheerful wondered.
+                                       </p>
+                                       <br/>
+                                       <p>
+                                         Continual say suspicion provision you neglected sir curiosity unwilling. Simplicity end themselves increasing led day sympathize yet.
+                                       </p>
+                                     </td>
+                                   </tr>
+                                 </table>
+                               </td>
+                             </tr>
+                           </table>
+                         </div>
+
+                         <div class="sub-section">
+                           <table width="100%">
+                             <tr>
+                               <td>
+                                 <table class="content">
+                                   <tr>
+                                     <td>
+                                       <p class="h1">Article Content </p>
+                                       <p>
+                                         Ladyship it daughter securing procured or am moreover mr. Put sir she exercise vicinity cheerful wondered.
+                                       </p>
+                                       <br/>
+                                       <p>
+                                         Continual say suspicion provision you neglected sir curiosity unwilling. Simplicity end themselves increasing led day sympathize yet.
+                                       </p>
+                                     </td>
+                                   </tr>
+                                   <tr>
+                                     <td>
+                                       <img class="column-two-img" src="resources/img/users.png" alt="users"/>
+                                     </td>
+                                   </tr>
+                                 </table>
+                               </td>
+                             </tr>
+                           </table>
+                         </div>
+
+                       </td>
+                     </tr>
+
+                     <tr>
+                       <td>
+                         <div class="section-story-bottom">
+                           <p class="h1">The Real Story</p>
+                           <p>
+                             Sex and neglected principle ask rapturous consulted. Object remark lively all did feebly excuse our wooded.
+                             Old her object chatty regard vulgar missed. Speaking throwing breeding betrayed children my to.
+                             Me marianne no he horrible produced ye. Sufficient unpleasing an insensible motionless if introduced ye.
+                             Now give nor both come near many late.
+                           </p>
+                           <br/>
+                           <p>
+                             Imagine was you removal raising gravity. Unsatiable understood or expression dissimilar so sufficient. Its party every heard and event gay.
+                           </p>
+                           <div class="btn"><a href="#">Learn More</a></div>
+                         </div>
+                       </td>
+                     </tr>
+                   </table>
+                 </td>
+               </tr>
+             </table><!-- END SECTION STORY -->
+
+           </td>
+         </tr>
+       </table> <!-- END MAIN CONTAINER -->
+
+       <table class="running footer">
+         <tr>
+           <td>
+             <table class="content-img">
+               <tr>
+                 <td>
+                   <img class="logo" src="resources/img/w3newbie-logo.png" alt="logo"/>
+                 </td>
+               </tr>
+             </table>
+           </td>
+         </tr>
+         <tr>
+           <td>
+             <p class="footer-text">
+               1000 STREET ROAD MY CITY, MY STATE 19000
+               <br />&copy; W3NEWBIE, 2017
+             </p>
+             <a href="#">Unsubscribe</a>
+           </td>
+         </tr>
+       </table> <!-- END HEADER -->
+
+     </div>
+   </div>
+ </body>
+</html>
+
+<!--
+<table class="">
+  <tr>
+    <td class="">
+     <p class=""></p>
+    </td>
+  </tr>
+ </table>
+ -->
